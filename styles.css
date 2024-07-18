@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    height: calc(100vh - 80px);
+}
+
+.sidebar {
+    width: 25%;
+    background-color: #f4f4f4;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+.sidebar button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.sidebar button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.sidebar button.active {
+    background-color: #d6d6d6;
+    color: #333;
+    transform: scale(1.0);
+    cursor: default;
+}
+
+.main {
+    width: 75%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.demo {
+    flex: 1;
+    background-color: #e9ecef;
+    margin-bottom: 20px;
+    padding: 20px;
+    overflow: auto;
+}
+
+.code {
+    height: 30%;
+    background-color: #f8f9fa;
+    padding: 20px;
+    overflow: auto;
+}
+
+.input-container {
+    margin-top: 20px;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+
+h2 {
+    font-size: 18px;
+    margin: 0;
+}

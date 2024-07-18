@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Algorithm Visualizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Sorting Algorithm Visualizer</h1>
+    </div>
+    <div class="container">
+        <div class="sidebar">
+            <p>Select the Algorithm:</p>
+            <button onclick="selectAlgorithm('selectionSort')">Selection Sort</button>
+            <button onclick="selectAlgorithm('bubbleSort')">Bubble Sort</button>
+            <button onclick="selectAlgorithm('insertionSort')">Insertion Sort</button>
+            <button onclick="selectAlgorithm('mergeSort')">Merge Sort</button>
+            <button onclick="selectAlgorithm('quickSort')">Quick Sort</button>
+            <button onclick="selectAlgorithm('heapSort')">Heap Sort</button>
+            
+            <div class="input-container">
+                <p>Enter the number of elements in the array you want to sort (Max elements up to 10)</p>
+                <input type="number" id="numElements" min="1" max="10">
+                <button id="submitButton" onclick="handleSubmit()">Submit</button>
+                <div id="elementInputs" style="display: none;">
+                    <div id="arrayInputs"></div>
+                    <p>Select only numbers from -999 to 999</p>
+                    <button id="runButton" style="display: none;" onclick="runAlgorithm()">Run</button>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="demo" id="demo">
+                <!-- Sorting visualization will be displayed here -->
+            </div>
+            <div class="code" id="code">
+                <h2 id="codeHeader">Python Code for the Selected Algorithm</h2>
+                <!-- Python code will be displayed here -->
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
